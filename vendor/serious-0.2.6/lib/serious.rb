@@ -1,5 +1,4 @@
 require 'rubygems'
-gem 'sinatra', '~> 0.9.4'
 require 'sinatra/base'
 require 'stupid_formatter'
 require 'yaml'
