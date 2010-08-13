@@ -1,1 +1,1 @@
-serious --version '>= 0.2.6'
+serious --version '= 0.2.6'
