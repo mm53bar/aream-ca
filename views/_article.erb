@@ -1,0 +1,35 @@
+<% @page_type ||= 'article' %>
+<div class="article">
+  <div class="header">
+    <h2 class="tk-headline"><a href="<%= article.url %>" rel="bookmark" title="Permanent Link to <%= article.title %>"><%= article.title %></a></h2>
+    <div class="meta">
+      <span class="author">by <%= article.author %></span>
+      <span class="date"><%= article.date %></span>
+    </div>        
+  </div>
+  <div>
+    <% if summary_only %>
+      <%= article.summary.formatted %>
+      <% if article.summary.length != article.body.length %>
+        <span class="right date"><a href="<%= article.url %>">read on...</a></span>
+      <% end %>
+    <% else %>
+      <%= article.body.formatted %>
+    <% end %>
+  </div>
+  <div class="footer">
+    <p class="category">from <a href="/<%= article.category.downcase %>"><%= article.category %></a></p>
+    <% unless summary_only %>  
+    <div class="description">
+      <p>I'm Michael McClenaghan and I run <a href="http://www.sideline.ca">Sideline Consulting Inc.</a>, a consultancy based in Edmonton, Canada. You're reading <em>Sideline</em>, a site that documents my journey in software development over the past few years. I spend my time consulting with organizations that want to get better at developing software. While most people think I'm crazy, I seriously get my kicks helping software teams in chaos.  You should <a href="/hire_me">hire me</a>!</p>
+      <p>In addition to consulting, I run <a href="http://www.agileedmonton.org">Agile Edmonton</a>, a user group that holds free, monthly presentations for anyone in the Edmonton area that's interested in learning more about how agile methods can help their software team.</p>
+    </div>
+    <% end %>
+  </div>
+  <% unless summary_only %>
+    <% if article['disqus_url'] %>
+    <script type="text/javascript">  var disqus_url = '<%= article['disqus_url'] %>'; </script> 
+    <% end %>
+    <%= render_partial :disqus if Serious.disqus %>
+  <% end %>
+</div>

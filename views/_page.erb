@@ -1,0 +1,19 @@
+<% @page_type ||= "#{page.title.downcase}" %>
+<div class="article">
+  <div class="header">
+    <h2><a href="<%= page.url %>" rel="bookmark" title="Permanent Link to <%= page.title %>"><%= page.title %></a></h2>
+  </div>
+  <div>
+    <%= page.body.formatted %>
+  </div>
+</div>
+<% unless page.articles.empty? %>
+<div class="archives">
+  <h2>Articles</h2>
+  <ul>
+  <% page.articles.each do |article| %>
+    <%= render_archive article %>
+  <% end %>
+  </ul>
+</div>
+<% end %>

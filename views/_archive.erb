@@ -1,0 +1,6 @@
+    <li>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <% if article.date %>
+        <span class="date"><%= article.date.formatted %></span>
+      <% end %>
+    </li>

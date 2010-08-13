@@ -1,0 +1,417 @@
+/*Undo browser defaults
+------------------------------------------------------------ */
+:link,:visited {text-decoration: none;}
+ul,ol {list-style: none;}
+h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+a img,:link img,:visited img {border: none;}
+address {font-style: normal;}
+
+/*Body & Links 
+------------------------------------------------------------ */
+body {
+  font-size: 62.5%;
+  font-family: Georgia, "Times New Roman", Times, Serif;
+  line-height: 2.2em;
+  color: #333;
+}
+a:link, a:visited { color: #772124; }
+a:hover {
+  text-decoration: underline;
+  color: #58181b;
+}
+/*Basic Structure
+------------------------------------------------------------ */
+#wrapper {
+	margin: 0 auto;
+  text-align: left;
+}
+#content { 
+	margin-top: 10px;
+}
+#sidebar { 
+  padding-bottom: 20px;
+}
+#header {
+  border-bottom: 5px solid #333;
+	padding: 10px 0;
+}
+#footer { 
+	color: #666;
+  font-size: 1.1em;
+  padding-top: 5px; 
+  border-top: 1px solid #eee;
+}
+.clear:after, li.comment:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/*Header
+------------------------------------------------------------ */
+h1#title, div#title {
+  font-size: 4.6em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+h1#title a:link, h1#title a:visited, div#title a:link, div#title a:visited  { color: #444; }
+h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
+#header div {
+	padding-top: 5px;
+}
+/*Tagline
+---------------------------------------*/
+#tagline h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #666;
+}
+/*Nav
+---------------------------------------*/
+#nav {
+  font-size: 1.5em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+}
+#nav ul {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+#nav ul li {
+  float: left;
+  margin: 0 0 0 15px;
+}
+#nav li a:link, #nav li a:visited {
+  color: #333;
+  text-decoration: none;
+}
+body#articles #nav li.articles a,
+  body#home #nav li.home a,
+  body#archives #nav li.archives a,
+  body#about #nav li.about a,
+  body#contact #nav li.contact a,
+  #nav li a:hover {
+  color: #772124;
+  text-decoration: none;
+  padding-top: .1em;
+  border-top: 4px solid #772124;
+}
+/*Description
+------------------------------------------------------------ */
+.description {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  background: #f3f3f2;
+  border: 1px solid #e3e1db;
+}
+.description h2, .description h3, .description h4 { margin: 0; padding: 0; }
+.description p { margin: 10px 0 0 0; }
+/*Article Styling
+------------------------------------------------------------ */
+/*Article Header
+---------------------------------------*/
+.article div.header {
+  border-bottom: 4px double #eee;
+  margin-bottom: 10px;
+}
+.article div.header h1, .article div.header h2 { 
+  font-size: 2.6em; 
+  line-height: 1.1em;
+	font-weight: normal;
+}
+.article div.header h1 a:link, .article div.header h1 a:visited,.article div.header h2 a:link, .article div.header h2 a:visited  { color: #444; }
+.article div.header h1 a:hover, .article div.header h2 a:hover { color: #772124; }
+/*Article Meta
+---------------------------------------*/
+.meta  {
+  margin: 5px 0 5px 0;
+  color: #666;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+}
+.meta .date {
+  float: right;
+  color: #757575;
+  text-transform: uppercase;
+}
+.article .date span {
+  color: #ddd;
+  font-weight: bold;
+}
+/*Post Body
+---------------------------------------*/
+.article a:link, .article a:visited { text-decoration: underline; }
+.article a:hover { text-decoration: none; }
+.article { font-size: 1.3em; }
+.article p { margin-bottom: 10px; }
+.article p.notice {
+  padding: 15px;
+  background-color: #fffbcc; 
+  border: 1px solid #f8f4c7;
+}
+.article h2, .article h3, .article h4 {
+  font-size: 1.3em;
+  padding: 15px 0 5px 0;
+}
+.article h3 { 
+  padding-top: 10px;
+  font-size: 1em;
+}
+.article h4 { 
+  padding-top: 10px;
+  font-size: .9em;
+}
+.article img, .article a img {
+	border:1px solid #ccc;
+	margin:10px;
+	padding:2px;
+	}
+.article img.left,
+.article div.left,
+.article em img {
+		float:left;
+		clear:left;
+		margin: 0 10px 0 0;
+		}
+.article img.right,
+.article div.right {
+		float:right;
+		clear:right;
+		margin:0 0 0 10px;
+		}
+.article div.center {
+	clear:both;
+	margin: 0 auto;
+}
+.article div.center p,
+.article div.left p,
+.article div.right p {
+	color:#888888;
+	font-style:italic;
+	font-size: smaller;
+	margin:-15px 10px 10px 10px;
+}
+.article p.caption {
+	color:#888888;
+	font-style:italic;
+	font-size: smaller;
+}
+pre {
+  margin: 10px 0;
+  padding: 1em 10px;
+  overflow: auto;
+  background-color: #f3f3f3;
+  color: #000;
+}
+code { 
+  padding: 2px 3px;
+  font: 1.1em Consolas, Courier New, sans-serif;
+  background-color: #f3f3f3;
+  color: #000;
+}
+pre code { font-size: 1.3em; }
+blockquote {
+  clear: both;
+  display: block;
+  padding: 20px 20px 10px 45px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #141310;
+  background: #e7e6e2 url(/images/theme/blockquote.gif) no-repeat top left;
+}
+.article ul { margin: 0 0 10px 10px; }
+.article ul li {
+  display: block;
+  margin: 5px 0 0 0;
+  padding: 0 0 0 17px;
+  background: url(/images/theme/list-star.gif) no-repeat 0 .3em;
+}
+.article ol { margin: 0 0 15px 30px; }
+.article ol li ol li { 
+  font-size: .9em;
+  list-style-type: lower-roman; 
+}
+.article ol li { 
+  margin: 10px 0 0 0; 
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+.navigation {
+  padding: 10px 0;
+  font-size: 1.3em;
+}
+.index { padding: 0; }
+.float-quote {
+  float: left;
+  width: 300px;
+  padding: 15px;
+  margin: 10px 10px 0 0;
+  background: #eaeaea;
+  border-top: 4px solid #333;
+  border-bottom: 4px solid #333;
+}
+.article .float-quote p {
+  margin: 0;
+  padding: 0 0 0 40px;
+  font-size: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+  line-height: 1.3em;
+  background: url(/images/theme/float-quote.gif) no-repeat top left;
+}
+.highlight-box {
+  float: right;
+  margin: 0 0 10px 10px;
+  width: 200px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+  border-top: 8px solid #000;
+  background: #772124;
+  color: #fff;
+}
+.highlight-box a:link, .highlight-box a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.highlight-box a:hover { text-decoration: none; }
+.article .highlight-box p {
+  margin: 10px 0;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+.article .highlight-box ul li {
+  font-size: 1.1em;
+  background: url(/images/theme/list-square.gif) no-repeat 0 .4em; 
+}
+.article .highlight-box h2, .article .highlight-box h3, .article .highlight-box h4 { 
+  margin: 0; 
+  padding: 0;
+  color: #fff; 
+}
+.highlight-box h2 { text-transform: uppercase; }
+/*Article Footer
+---------------------------------------*/
+.article div.footer {
+  padding-bottom: 2px;
+  margin: 0 0 30px 0;
+  font-size: 1.1em;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+.article div.footer .category {
+	font-style: italic;
+  text-align: right;
+}
+.article div.footer a:link, .article div.footer a:visited {
+  color: #333;
+  font-style: normal;
+}
+.article div.footer a:hover { color: #772124; }
+/*Sidebar
+------------------------------------------------------------ */
+#sidebar-image { padding-top: 20px; }
+#sidebar-image { font-size: 1.3em; } 
+#sidebar-image p { 
+  margin-bottom: 15px; 
+  line-height: 1.6em;
+}
+#sidebar h2.title {
+  padding: 25px 0 3px 0;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+  border-bottom: 1px solid #eee;
+}
+#sidebar div ul {
+  margin: 0;
+  font-size: 1.4em;
+}
+#sidebar div ul li ul { 
+  margin-left: 5px;
+  font-size: 1em; 
+}
+#sidebar div ul li { 
+  padding: 8px 0;
+  border-bottom: 1px solid #eee; 
+}
+#sidebar div ul li ul li { border-bottom: none; }
+#sidebar div li a {
+  display: block;
+  padding: 0 0 0 15px;
+  background: url(/images/theme/list-item.gif) no-repeat 0 6px;
+}
+#sidebar div ul li a:hover { background-position: 0 -136px; }
+/*Subscription Box
+---------------------------------------*/
+#subscriptions  { padding-top: 10px; }
+#subscriptions p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+#subscriptions a {
+  float: left;
+  font-size: 1.3em;
+  margin: 10px 10px 0 0;
+  display: block;
+  padding: 0 0 0 19px;
+  background: url(/images/theme/feed-icon.png) no-repeat 0 .25em;
+}
+#subscriptions a.mailfeed {
+  background: url(/images/theme/mailfeed-icon.png) no-repeat 0 .25em;
+}
+#subscriptions a.email {
+  padding: 0 0 0 25px;
+  background: url(/images/theme/mail-icon.png) no-repeat 0 .4em;
+}
+#subscriptions a.linkedin {
+  background: url(/images/theme/linkedin-icon.png) no-repeat 0 .25em;
+}
+#subscriptions a.google {
+  background: url(/images/theme/google-icon.png) no-repeat 0 .25em;	
+}
+#subscriptions a.twitter { 
+  margin-right: 0;
+  padding-left: 19px; 
+  background: url(/images/theme/twitter-icon.png) no-repeat 0 .15em; 
+}
+/*Footer
+------------------------------------------------------------ */
+#footer  p.copyright { text-align:right; }
+#footer  a:link, footer.main  a:visited { color: #666; text-decoration: underline; }
+#footer  a:hover { color: #772124; }
+/*Archives
+------------------------------------------------------------ */
+div.archives h2 {
+  padding: 0px 0 3px 0;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+  border-bottom: 1px solid #eee;
+}
+div.archives ul {
+  margin: 0;
+  font-size: 1.4em;
+}
+div.archives ul li { 
+  padding: 8px 0;
+  border-bottom: 1px solid #eee; 
+}
+div.archives li a {
+	padding: 0 6px 0 0;
+}
+div.archives li span {
+  padding: 0 0 0 15px;
+  background: url(/images/theme/list-item.gif) no-repeat 0 6px;
+}
+/* Home
+------------------------------------------------------------ */
+#home .description h1 {
+	font-size: 24px;
+	line-height: 36px;
+	text-align:center;
+}
+#home h2 {
+	font-size: 18px;
+	border-top: 1px solid #000;
+	margin: 40px 0 0 0;
+}
